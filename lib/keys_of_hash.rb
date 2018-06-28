@@ -2,8 +2,8 @@ class Hash
   def keys_of(arguments,*values)
     animals=[]
     self.each do |x,y| 
-      *
-      if y == arguments
+      values.each do |value| 
+      if y == value
         animals.push(x)
       end
     end
