@@ -4,7 +4,7 @@ class Hash
     self.each do |animals,place| 
 
       if arguments.include?(place)
-        animals.push(x)
+        animals_arr.push(x)
       end
     end
     return animals_arr
