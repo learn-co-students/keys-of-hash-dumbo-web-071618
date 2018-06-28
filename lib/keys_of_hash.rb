@@ -9,8 +9,6 @@ class Hash
       end
     end
     end
-    puts animals
-    
     return animals
   end
 end
