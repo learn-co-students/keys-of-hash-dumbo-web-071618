@@ -1,14 +1,12 @@
 class Hash
-  def keys_of(arguments,*values)
-    animals=[]
-    self.each do |x,y| 
-      values.each do |value| 
-        puts value
-      if y == value
+  def keys_of(*arguments)
+    animals_arr=[]
+    self.each do |animals,place| 
+
+      if y.include?(place)
         animals.push(x)
       end
     end
-    end
-    return animals
+    return animals_arr
   end
 end
