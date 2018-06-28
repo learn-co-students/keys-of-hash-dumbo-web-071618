@@ -3,7 +3,7 @@ class Hash
     animals_arr=[]
     self.each do |animals,place| 
 
-      if y.include?(place)
+      if arguments.include?(place)
         animals.push(x)
       end
     end
