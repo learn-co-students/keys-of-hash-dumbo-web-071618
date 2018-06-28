@@ -1,5 +1,7 @@
 class Hash
   def keys_of(arguments)
-puts arguments
+    arguments.each do |x| 
+      puts x
+    end
   end
 end
