@@ -1,5 +1,13 @@
+require 'pry'
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+    special_array = []
+  each do |key, value|
+      if arguments.include?(value)
+      special_array << key
+      end
   end
-end
+  special_array
+  end
+end  
+  
